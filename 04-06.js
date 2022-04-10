@@ -95,7 +95,8 @@ function Stopwatch(){
   }
 
   Object.defineProperty(this, 'duration', {
-    get: function()  { return duration;}
+    get: function()  { 
+      return duration;
   })
 }
 
@@ -106,3 +107,4 @@ function Stopwatch(){
 
 
 const sw = new Stopwatch()
+console.log(sw.duration)
